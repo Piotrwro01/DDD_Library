@@ -1,3 +1,5 @@
-﻿namespace DDD_Library.Domain.Shared;
+﻿//using DDD_Library.Domain.BooksProperties;
 
-public record EditionProperties(Ulid BookPropertiesId, string ISBN);
+//namespace DDD_Library.Domain.Shared;
+
+//public record EditionProperties(Ulid BookPropertiesId, ISBN ISBN);

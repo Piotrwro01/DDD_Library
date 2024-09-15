@@ -1,15 +1,17 @@
 ﻿using DDD_Library.Domain.Abstractions;
-using DDD_Library.Domain.Shared;
+using DDD_Library.Domain.BooksProperties;
 
 namespace DDD_Library.Domain.Books;
 
 public sealed class Book : Entity
 {
-    private Book(Ulid id) : base(id)
+    private Book(Ulid id, BookProperties bookProperties) 
+        : base(id)
     {
+        BookProperties = bookProperties;
     }
 
-    public EditionProperties EditionProperties { get; private set; } 
+    public BookProperties BookProperties { get; private set; }
 
     public decimal Rating { get; private set; }
     public bool IsAvailable { get; private set; }
