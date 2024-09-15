@@ -9,7 +9,7 @@ public sealed class Book : Entity
     {
     }
 
-    public BookEditionProperties BookEditionProperties { get; private set; } 
+    public EditionProperties EditionProperties { get; private set; } 
 
     public decimal Rating { get; private set; }
     public bool IsAvailable { get; private set; }

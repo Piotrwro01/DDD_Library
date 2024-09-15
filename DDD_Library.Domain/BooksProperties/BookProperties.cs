@@ -15,7 +15,7 @@ public sealed class BookProperties  : Entity
     public string CoverUrl { get; private set; }
     public string Description { get; private set; }
 
-    public string Form { get; private set; }
+    public BookLevel BookLevel { get; private set; }
     public string Launguage { get; private set; }
     public int EditionNumber { get; private set; }
     public string Publisher { get; private set; }
