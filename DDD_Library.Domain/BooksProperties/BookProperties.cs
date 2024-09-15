@@ -8,20 +8,14 @@ public sealed class BookProperties  : Entity
     {
     }
 
-    public string ISBNNumber { get; private set; }
-
-    public List<string> Authors { get; private set; } = [];
-    public string Title { get; private set; }
-    public string CoverUrl { get; private set; }
-    public string Description { get; private set; }
+    public ISBN InternationalStandardBookNumber { get; private set; }
 
     public BookLevel BookLevel { get; private set; }
-    public string Launguage { get; private set; }
-    public int EditionNumber { get; private set; }
-    public string Publisher { get; private set; }
-    public DateOnly PublicationDate { get; private set; }
-    public bool IsPartOfSeries { get; private set; }
-    public string? SeriesName { get; private set; }
-    public string Genre { get; private set; }
+
+    public BookBasicInfo BookBasicInfo { get; private set; }
+
+    public BookPublicationDetails BookPublicationDetails { get; private set; }
+
+    public BookQueryingInfo BookQueryingInfo { get; private set; }
 
 }
